@@ -1,4 +1,6 @@
 ![Banner](https://i.imgur.com/jghe2cC.png)
+
+## Corgi
 Automatic chat moderation with this easy to use bot.  
 
 ### Features
