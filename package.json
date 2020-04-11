@@ -1,0 +1,15 @@
+{
+  "name": "corgi",
+  "version": "1.0.0",
+  "description": "🐕 Auto-Moderation has never been so easy. Automatically moderate your chat with Corgi.",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "node ./src"
+  },
+  "author": "Sammwy <sammwy.dev@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lowdb": "^1.0.0",
+    "discord.js": "^11.5.1"
+  }
+}
