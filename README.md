@@ -33,3 +33,6 @@ use c!setlang <es/en>
 **c!setflood <arg>** | enable or disable flood check  
 **c!setmaxchar <arg>** | max repeated secuencial characters  
 **c!setmaxlength <arg>** | set max message length  
+
+### Support
+Contact me on discord: **Sammwy#0001**
