@@ -13,5 +13,9 @@ exports.run = (client) => {
 }
 
 function ignore (message) {
-	return message.author.bot || message.guild == null || message.member == null || message.content == null;
+	return message.guild.member(message.author).hasPermission('BAN_MEMBERS') 
+		|| message.author.bot 
+		|| message.guild == null 
+		|| message.member == null 
+		|| message.content == null;
 }
