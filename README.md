@@ -2,7 +2,7 @@
 
 ## Corgi
 Automatic chat moderation with this easy to use bot.  
-[Invite me](https://discordapp.com/oauth2/authorize?client_id=698225680055271445&permissions=403565574&scope=bot) | [Vote me](https://top.gg/bot/698225680055271445)
+[Invite me](https://discordapp.com/oauth2/authorize?client_id=698225680055271445&permissions=403565574&scope=bot) | [View on top.gg](https://top.gg/bot/698225680055271445) | [View on ondiscord.xyz](https://bots.ondiscord.xyz/bots/698225680055271445)
 
 ### Features
 1. Multi Language Support.  
