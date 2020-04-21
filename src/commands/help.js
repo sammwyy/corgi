@@ -11,6 +11,7 @@ exports.run = async (client, message, args) => {
 		.setTitle(lang(guild.lang, "help_title"))
 		.addField(client.config.prefix + "config", lang(guild.lang, "config_cmd_description"), true)
 		.addField(client.config.prefix + "help", lang(guild.lang, "help_cmd_description"), true)
+		.addField(client.config.prefix + "invite", lang(guild.lang, "invite_cmd_description"), true)
 		.addField(client.config.prefix + "setlang <arg>", lang(guild.lang, "setlang_cmd_description"), true)
 		.addField(client.config.prefix + "setcaps <arg>", lang(guild.lang, "setcaps_cmd_description"), true)
 		.addField(client.config.prefix + "setinvite <arg>", lang(guild.lang, "setinvite_cmd_description"), true)
@@ -21,6 +22,8 @@ exports.run = async (client, message, args) => {
 		.addField(client.config.prefix + "setflood <arg>", lang(guild.lang, "setflood_cmd_description"), true)
 		.addField(client.config.prefix + "setmaxchar", lang(guild.lang, "setmaxchar_cmd_description"), true)
 		.addField(client.config.prefix + "setmaxlength", lang(guild.lang, "setmaxlength_cmd_description"), true)
+		.addField(client.config.prefix + "setmodbypass", lang(guild.lang, "setmodbypass_cmd_description"), true)
+		.addField(client.config.prefix + "setadminbypass", lang(guild.lang, "setadminbypass_cmd_description"), true)
 
 	message.channel.send(embed);
 }

@@ -24,7 +24,9 @@ exports.run = async (client, message, args) => {
 		.addField(lang(guild.lang, "swear_check"), parser.boolToString(guild.swear_check), true)
 		.addField(lang(guild.lang, "flood_check"), parser.boolToString(guild.flood_check), true)
 		.addField(lang(guild.lang, "max_repeated_char"), guild.max_repeated_character, true)
-		.addField(lang(guild.lang, "max_msg_length"), guild.max_message_length, true);
+		.addField(lang(guild.lang, "max_msg_length"), guild.max_message_length, true)
+		.addField(lang(guild.lang, "admin_bypass"), parser.boolToString(guild.admin_bypass), true)
+		.addField(lang(guild.lang, "mod_bypass"), parser.boolToString(guild.mod_bypass), true);
 
 	message.channel.send(embed);
 }

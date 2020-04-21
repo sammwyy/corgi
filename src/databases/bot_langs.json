@@ -28,6 +28,9 @@
       "setflood_cmd_description": "enable or disable flood check",
       "setmaxchar_cmd_description": "max repeated secuencial characters",
       "setmaxlength_cmd_description": "set max message length",
+      "setadminbypass_cmd_description": "enable or disable administrator bypass",
+      "setmodbypass_cmd_description": "enable or disable moderator bypass",
+      "invite_cmd_description": "send you the bot invite link",
       "click_here": "Click here",
       "invite_me": "Invite me to your server with this link.",
       "specify_value_enable_disable": "Specify a value (enabled/disabled)",
@@ -43,7 +46,9 @@
       "link_warning": "Do not send links, please.",
       "flood_warning": "Do not repeat characters (do not flood), please.",
       "length_warning": "Do not send messages too long, please.",
-      "warning": "Warning"
+      "warning": "Warning",
+      "mod_bypass": "Moderator bypass",
+      "admin_bypass": "Administrator bypass"
     },
 
     {
@@ -74,6 +79,9 @@
       "setflood_cmd_description": "activa o desactiva check de flood",
       "setmaxchar_cmd_description": "define el limite de caracteres seguidos",
       "setmaxlength_cmd_description": "define el limite de longitud por mensaje",
+      "setadminbypass_cmd_description": "activa o desactiva bypass para admins",
+      "setmodbypass_cmd_description": "activa o desactiva bypass para mods",
+      "invite_cmd_description": "recibe un mensaje con el link de invitación",
       "click_here": "Click aquí",
       "invite_me": "Invitame a tu servidor con el enlace de arriba.",
       "specify_value_enable_disable": "Debes especificar un valor (enabled/disabled)",
@@ -89,7 +97,9 @@
       "link_warning": "No envies links aqui por favor.",
       "flood_warning": "No repitas caracteres (no flood) por favor.",
       "length_warning": "No envies mensajes muy largos.",
-      "warning": "Advertencia"
+      "warning": "Advertencia",
+      "mod_bypass": "Bypass al moderador",
+      "admin_bypass": "Bypass al administrador"
     }
   ]
 }

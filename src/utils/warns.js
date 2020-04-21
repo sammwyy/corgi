@@ -1,9 +1,9 @@
 const Discord = require("discord.js");
 
-exports.sendWarn = (message, reason, title) => {
+exports.sendWarn = (message, reason) => {
 	const embed = new Discord.RichEmbed()
 		.setColor("#55FFAA")
-		.setTitle(title)
+		.setTitle("<:corgi:698275192312430655> Advertencia:")
 		.setDescription(`<@${message.author.id}>, ${reason}`);
 
 	message.channel.send(embed).then(msg => msg.delete(5000));
