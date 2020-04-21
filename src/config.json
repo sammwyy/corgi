@@ -1,4 +1,6 @@
 {
 	"token" : "insert token here",
-	"prefix" : "c!"
+	"prefix" : "c!",
+	"main_guild": "xxxxxxxxxx",
+	"logs_channel": "xxxxxxxxxx"
 }
