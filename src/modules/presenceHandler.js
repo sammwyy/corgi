@@ -1,9 +1,9 @@
 // Presence Variables
 const twitchUrl = "https://www.twitch.tv/sammwy";
-const motd = "In %guilds% guilds | c!help";
-const type = "streaming";
+const presences = ["%users% users | c!help", "%guilds% guilds | c!help", "Support: Sammwy#0001 | c!help"];
+const type = "playing";
 const status = "dnd";
-const presenceRefreshRate = 60;
+const presenceRefreshRate = 30;
 
 // Set presence every X seconds
 exports.run = (client) => {
@@ -17,5 +17,12 @@ exports.run = (client) => {
 }
 
 function getPresence (client) {
-	return motd.replace("%guilds%", client.guilds.size);
+  let presence = presences[getRandomInt(0, presences.length - 1)];
+	return presence
+		.replace("%guilds%", client.guilds.size)
+		.replace("%users%", client.users.size);
+}
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }

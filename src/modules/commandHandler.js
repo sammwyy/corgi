@@ -21,6 +21,11 @@ exports.run = (client) => {
   			if (message.guild == null) {
   				message.author.send("Command only avaible in a Guild!")
   			} else {
+          if (!message.guild.me.hasPermission("EMBED_LINKS")) {
+            if (message.guild.me.hasPermission("SEND_MESSAGES"))
+              message.reply("Missing permission `EMBED_LINKS` in this channel").then(msg => msg.delete(5000));
+            return;
+          }
   				runCommand(client, message);
   			}
   		}

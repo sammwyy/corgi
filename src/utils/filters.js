@@ -1,8 +1,9 @@
 exports.capsCheck = (str) => {
 	str = str.replace( /[0-9]/g, '' );
-	var lowers = str.replace( /[^a-z]/g, '' ).length;
-	var uppers = str.replace( /[a-z]/g, '' ).length;
-	return str.length > 12 && uppers > 12 && uppers > lowers ;
+	var lowers = str.replace( /[a-z]/g, '{LOWERHERE!!!CORGI_BOT}' ).split('{LOWERHERE!!!CORGI_BOT}').length;
+	var uppers = str.replace( /[A-Z]/g, '{UPPERHERE!!!CORGI_BOT}' ).split('{UPPERHERE!!!CORGI_BOT}').length;
+
+	return str.length > 12 && uppers > 12 && uppers > lowers;
 }
 
 exports.inviteCheck = (str) => {
@@ -37,7 +38,11 @@ exports.linkCheck = (str) => {
 
 exports.floodCheck = (str) => {
 	// const characters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-	const characters = "abcdefghijklmnñopqrstuvwxyz";
+	let characters = "";
+
+	for (let i = 0; i < str.length; i++)
+		if (!characters.includes(str[i])) characters = characters + str[i];
+
 	for (let i = 0; i < characters.length; i++) {
 		let char = characters[i];
 		let max = 7;

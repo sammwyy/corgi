@@ -21,10 +21,11 @@ async function ignore (client, message) {
 	const admin_bypass = config.admin_bypass;
 	const mod_bypass = config.mod_bypass;
 
-	return message.author.bot 
+	return message.author.bot
 		|| message.guild == null 
 		|| message.member == null 
 		|| message.content == null
+		|| (!message.guild.me.hasPermission("MANAGE_MESSAGES"))
 		|| (message.guild.member(message.author).hasPermission('ADMINISTRATOR') && admin_bypass)
 		|| (message.guild.member(message.author).hasPermission('BAN_MEMBERS') && mod_bypass);
 }

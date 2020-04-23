@@ -48,7 +48,12 @@
       "length_warning": "Do not send messages too long, please.",
       "warning": "Warning",
       "mod_bypass": "Moderator bypass",
-      "admin_bypass": "Administrator bypass"
+      "admin_bypass": "Administrator bypass",
+      "botinfo_title": "Bot information",
+      "word_users": "Users",
+      "word_guilds": "Guilds",
+      "word_creator": "Creator",
+      "botinfo_cmd_description": "Get bot information"
     },
 
     {
@@ -99,7 +104,12 @@
       "length_warning": "No envies mensajes muy largos.",
       "warning": "Advertencia",
       "mod_bypass": "Bypass al moderador",
-      "admin_bypass": "Bypass al administrador"
+      "admin_bypass": "Bypass al administrador",
+      "botinfo_title": "Información del bot",
+      "word_users": "Usuarios",
+      "word_guilds": "Servidores",
+      "word_creator": "Creador",
+      "botinfo_cmd_description": "Obtener información del bot"
     }
   ]
 }

@@ -30,11 +30,18 @@ exports.filterMessage = async (client, message) => {
 }
 
 exports.sendWarn = (message, reason, title) => {
+	message.delete(0);
+
+	if (!message.guild.me.hasPermission("EMBED_LINKS")) {
+		if (message.guild.me.hasPermission("SEND_MESSAGES"))
+			message.channel.send(`<@${message.author.id}>, ${reason}`).then(msg => msg.delete(5000));
+		return;
+	}
+
 	const embed = new Discord.RichEmbed()
 		.setColor("#55FFAA")
 		.setTitle(title + ":")
 		.setDescription(`<@${message.author.id}>, ${reason}`);
 
 	message.channel.send(embed).then(msg => msg.delete(5000));
-	message.delete(0);
 }

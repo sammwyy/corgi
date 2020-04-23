@@ -24,6 +24,7 @@ exports.run = async (client, message, args) => {
 		.addField(client.config.prefix + "setmaxlength", lang(guild.lang, "setmaxlength_cmd_description"), true)
 		.addField(client.config.prefix + "setmodbypass", lang(guild.lang, "setmodbypass_cmd_description"), true)
 		.addField(client.config.prefix + "setadminbypass", lang(guild.lang, "setadminbypass_cmd_description"), true)
+		.addField(client.config.prefix + "botinfo", lang(guild.lang, "botinfo_cmd_description"), true)
 
 	message.channel.send(embed);
 }
