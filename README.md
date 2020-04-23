@@ -40,5 +40,8 @@ use c!setlang <es/en>
 **c!setmodbypass <arg>** | enable or disable bypass for moderators [Ban permission]  
 **c!setadminbypass <arg>** | enable or disable bypass for administrador [Administrator permission]  
 
+### Only Bot Owner commands 
+**c!eval <expression>** | Evaluate a javascript expression  
+
 ### Support
 Contact me on discord: **Sammwy#0001**
