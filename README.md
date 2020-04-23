@@ -13,6 +13,8 @@ Automatic chat moderation with this easy to use bot.
 6. Prevent swearning in the chat.  
 7. Prevent character flood in the chat (AAAAAAAA).  
 8. Set a limit of message length.  
+9. Admin and mod bypass.  
+10. Multiple presences system
 
 ### Available languages
 1. En (English) - default  
@@ -21,6 +23,7 @@ Automatic chat moderation with this easy to use bot.
 use c!setlang <es/en>
 
 ### Available commands 
+**c!botinfo** | Display bot information  
 **c!config** | Display server settings  
 **c!help** | get help (show command list) 
 **c!invite** | get the bot invite  
@@ -34,6 +37,8 @@ use c!setlang <es/en>
 **c!setflood <arg>** | enable or disable flood check  
 **c!setmaxchar <arg>** | max repeated secuencial characters  
 **c!setmaxlength <arg>** | set max message length  
+**c!setmodbypass <arg>** | enable or disable bypass for moderators [Ban permission]  
+**c!setadminbypass <arg>** | enable or disable bypass for administrador [Administrator permission]  
 
 ### Support
 Contact me on discord: **Sammwy#0001**
