@@ -2,6 +2,8 @@ const Discord = require("discord.js");
 const util = require("util");
 
 exports.run = (client, message, args) => {
+ 
+    if (client.config.bot_owner == "xxxxxxxxxx") return;
     
     if (message.member.id == client.config.bot_owner) {
     	try {
