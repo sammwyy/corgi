@@ -2,5 +2,6 @@
 	"token" : "insert token here",
 	"prefix" : "c!",
 	"main_guild_id": "xxxxxxxxxx",
-	"logs_channel_id": "xxxxxxxxxx"
+	"logs_channel_id": "xxxxxxxxxx",
+	"bot_owner": "xxxxxxxxxx"
 }
